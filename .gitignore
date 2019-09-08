@@ -3,7 +3,8 @@ node_modules/
 #all psd
 psd/
 *.psd
-/**/*.txt
+
+*.txt
 
 #archive files
 *.zip
