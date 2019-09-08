@@ -231,4 +231,62 @@ input::placeholder {
   font: 14px $rl;
   margin-bottom: 75px;
 }
+
+//services
+
+.services .def__title {
+  margin-bottom: 35px;
+}
+
+.services {
+  .services__item + .services__item {
+    margin-top: 21px;
+  }
+}
+
+.def__title {
+  font: 36px / 38px $rl;
+  color: $black-text-title;
+  margin: 0 auto;
+  border-bottom: 1px solid $light-blue;
+  max-width: 377px;
+  width: 100%;
+  margin-top: 60px;
+  padding-bottom: 22px;
+  text-align: center;
+}
+
+.services__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__item_left {
+  .services__item-img {
+    order: -1;
+  }
+  .services__item-box {
+    padding-right: 0;
+    padding-left: 30px;
+  }
+}
+
+.services__item-box {
+  width: 50%;
+  padding-right: 30px;
+}
+
+.services__item-title {
+  font: 28px / 24px $rl;
+  color: $light-blue;
+  margin-bottom: 14px;
+}
+
+.services__item-text {
+  font: 18px / 24px $rt;
+  margin-bottom: 25px;
+}
+
+
 @import "media";

@@ -1,10 +1,5 @@
 node_modules/
 
-#all psd
-psd/
-*.psd
-*.txt
-
 #archive files
 *.zip
 *.rar
