@@ -1,1 +1,1 @@
-[2019-9-8 13:06:58] layer "+ 7 896 876 66 77 + 7 896 876 66 77 sales@23degree.kz skype: 23": Expected Either a default asset specification or a layer asset specification but "+" found.
+adsfasd
