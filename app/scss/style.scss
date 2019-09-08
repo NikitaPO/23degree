@@ -45,10 +45,7 @@ button {
 }
 
 body {
-  font-family: $fn-mr;
-  color: $black-text;
-  line-height: 23px;
-  font-weight: 400;
+
 }
 
 input:focus {
@@ -74,7 +71,7 @@ input:focus {
 }
 
 *::selection {
-  //выделение на сайте
+  color: #82c7e7;
 }
 
 
