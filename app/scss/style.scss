@@ -171,17 +171,41 @@ input:focus {
   font: 22px / 28px $rl;
   margin-bottom: 70px;
 }
+$border__offer: 1px solid rgba(#fff, .3);
 
 .header__form {
-  border: 1px solid rgba(#fff, .3);
+  border: 1px solid transparent;
+  border-right: $border__offer;
+  border-left: $border__offer;
   margin-bottom: 50px;
   position: relative;
+  max-width: 954px;
+  width: 100%;
+  margin: 0 auto;
 
   .def__btn {
     position: absolute;
     left: 50%;
-    bottom: -32px;
+    top: 43px;
     transform: translateX(-50%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -361px;
+      bottom: 28px;
+      border-top: $border__offer;
+      width: 350px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: -361px;
+      bottom: 28px;
+      border-top: $border__offer;
+      width: 350px;
+    }
   }
 }
 
@@ -191,6 +215,25 @@ input:focus {
   margin: -27px auto 50px;
   max-width: 890px;
   width: 100%;
+
+  &::before {
+    content: '';
+    left: 0;
+    top: -1px;
+    position: absolute;
+    border-top: $border__offer;
+    width: 2%;
+  }
+
+  &::after {
+    content: '';
+    right: 0;
+    top: -1px;
+    position: absolute;
+    border-top: $border__offer;
+    width: 2%;
+  }
+
 
   input {
     width: 32%;
@@ -230,8 +273,8 @@ input::placeholder {
 .header__offer-text {
   font: 14px $rl;
   margin-bottom: 75px;
+  margin-top: 53px;
 }
-
 //services
 
 .services .def__title {
@@ -239,6 +282,8 @@ input::placeholder {
 }
 
 .services {
+  padding-bottom: 73px;
+
   .services__item + .services__item {
     margin-top: 21px;
   }
@@ -266,6 +311,7 @@ input::placeholder {
   .services__item-img {
     order: -1;
   }
+
   .services__item-box {
     padding-right: 0;
     padding-left: 30px;
@@ -287,6 +333,4 @@ input::placeholder {
   font: 18px / 24px $rt;
   margin-bottom: 25px;
 }
-
-
 @import "media";
