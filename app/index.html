@@ -2,13 +2,13 @@
 <html lang="ru">
 
 <head>
+  <title>23degrees</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> -->
   <script src="https://kit.fontawesome.com/cf02223ec3.js"></script>
   <link rel="stylesheet" href="css/style.min.css">
-  <title>23degrees</title>
 </head>
 
 <body>
@@ -50,7 +50,11 @@
               <input type="text" placeholder="E-mail">
               <input type="tel" placeholder="Номер телефона">
             </div>
-            <a class="def__btn" type="submit">Оставить заявку!</a>
+            <div class="header__btn-inner">
+              <div class="header__btn-line header__btn-line--before"></div>
+              <a class="def__btn" type="submit">Оставить заявку!</a>
+              <div class="header__btn-line header__btn-line--after"></div>
+            </div>
           </form>
         </div>
         <div class="header__offer-text">
@@ -108,6 +112,101 @@
         </div>
       </div>
 
+    </div>
+  </section>
+
+  <section class="price">
+    <div class="container">
+      <div class="def__title def__title_invert">
+        Расчитать стоимость
+      </div>
+      <div class="def__subtitle">
+        Расчитайте предварительную стоимость разработки интерьера
+      </div>
+      <div class="price__wrapper">
+        <div class="price__boxes">
+          <div class="price__box">
+            <div class="price__box-title">Площадь помещения:</div>
+            <div class="price__box-runner">
+
+              <div class="price__box-runner-text">
+                <div class="price__box-btns-text">
+                  100м<sup>2</sup>
+                </div>
+                <div class="price__box-btns-text">
+                  10 000м<sup>2</sup>
+                </div>
+                <div class="price__box-btns-text">
+                  250 000м<sup>2</sup>
+                </div>
+                <div class="price__box-btns-text">
+                  500 000м<sup>2</sup>
+                </div>
+              </div>
+
+              <div class="price__box-runner-btns">
+                <div class="price__box-btn-inner">
+                  <button class="price__box-btn price__box-btn_01"></button>
+                </div>
+                <div class="price__box-btn-inner">
+                  <button class="price__box-btn price__box-btn_10"></button>
+                </div>
+                <div class="price__box-btn-inner">
+                  <button class="price__box-btn price__box-btn_250"></button>
+                </div>
+                <div class="price__box-btn-inner">
+                  <button class="price__box-btn price__box-btn_500"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="price__box">
+            <div class="price__box-title">Выберите пакет:</div>
+            <div class="price__box-btns"></div>
+          </div>
+        </div>
+        <div class="price__results">
+          <div class="price__results-items">
+
+            <div class="price__results-item">
+              <div class="price__results-text">
+                Площадь помещения:
+              </div>
+              <div class="price__results-value">
+                <span class="area">1 000</span>м<sup>2</sup>
+              </div>
+            </div>
+
+            <div class="price__results-item">
+              <div class="price__results-text">
+                Средняя стоимость м<sup>2</sup>:
+              </div>
+              <div class="price__results-value">
+                <span class="meters-cost">4 850</span> руб.
+              </div>
+            </div>
+
+            <div class="price__results-item">
+              <div class="price__results-text">
+                Средняя стоимость объекта:
+              </div>
+              <div class="price__results-value">
+                <span class="object-cost">48 500</span> руб.
+              </div>
+            </div>
+
+          </div>
+          <div class="def__btn">
+            Получить консультацию специалиста
+          </div>
+          <div class="price__results-phone-text">
+            или позвоните нам по телефону:
+          </div>
+          <a href="tel:77273887177" class="price__phone">
+            + 7 727 388 71 77
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
