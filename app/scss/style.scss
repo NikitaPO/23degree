@@ -18,7 +18,7 @@ html {
 }
 
 a {
-  color: #000;
+  color: inherit;
   font-family: sans-serif;
   text-decoration: none;
   display: inline-block;
@@ -46,9 +46,12 @@ p {
 button,
 input[type="submit"],
 input[type="reset"],
-button:active,
-button:focus {
+[type="button"],
+[type="reset"],
+[type="submit"]
+{
   background: none;
+  -webkit-appearance: none;
   color: inherit;
   border: none;
   padding: 0;
@@ -379,6 +382,7 @@ input::placeholder {
 }
 
 .price__box-title {
+  font: 20px / 24px $rr;
   margin-bottom: 24px;
 }
 
@@ -412,6 +416,14 @@ input::placeholder {
   text-align: right;
 }
 
+.price__box-btns {
+  display: flex;
+  justify-content: space-between;
+  .def__btn--small {
+    width: 32%;
+  }
+}
+
 .price__box-runner-btns {
   display: flex;
   justify-content: space-between;
@@ -431,14 +443,122 @@ input::placeholder {
 .price__box-btn:hover,
 .price__box-btn.active {
   box-shadow: inset 0 0 0 7px $light-blue;
+  transition: box-shadow .3s;
 }
 
 .def__btn--small {
+  width: 100%;
   border-radius: 5px;
   background-color: transparent;
   border: 1px solid #fff;
   padding: 13px;
 }
 
-.def__btn--small
+.def__btn--small.active {
+  border: $light-blue;
+  background-color: $light-blue;
+}
+
+.price__results {
+  text-align: center;
+  font-family: $rr;
+  .def__btn {
+    margin-bottom: 24px;
+  }
+}
+
+.price__results-items {
+  margin-bottom: 30px;
+}
+
+.price__results-text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.price__results-value {
+  font-size: 32px;
+  line-height: 32px;
+
+  margin-bottom: 10px;
+}
+
+.price__results-phone-text {
+  font: 14px $rl;
+}
+
+.price__phone {
+  font: 18px $rm;
+}
+
+//Potrfolio
+
+.portfolio {
+  padding-bottom: 51px;
+  text-align: center;
+  .def__title {
+    margin-bottom: 26px;
+  }
+}
+
+.portfolio__categories-wrapper {
+  display: inline-block;
+  border: 1px solid $light-blue;
+  border-radius: 50px;
+  margin-bottom: 23px;
+}
+
+.portfolio__categories {
+  display: flex;
+  justify-content: center;
+  padding: 3px 0;
+  font: 14px / 14px $rl;
+  text-transform: uppercase;
+  color: $light-blue;
+
+  a + a {
+    border-left: 1px solid $light-blue;
+  }
+}
+
+.portfolio__category {
+  padding: 18px 40px ;
+}
+
+.portfolio__category:hover,
+.portfolio__category.active {
+  background-color: $light-blue;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+
+  transition: .25s;
+  transform: scale(1.14, 1.14);
+}
+
+.portfolio__category:first-child:hover {
+  border-radius: 50px 20px 20px 50px;
+}
+
+.portfolio__category:last-child:hover {
+  border-radius: 20px 50px 50px 20px;
+}
+
+.portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__item {
+  margin: 15px;
+}
+
+.portfolio__items-wrapper {
+  margin: 0 auto;
+  max-width: 1170px;
+  width: 100%;
+}
+
 @import "media";
