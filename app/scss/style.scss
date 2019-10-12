@@ -597,4 +597,38 @@ input::placeholder {
   border-top: 1px solid $light-blue;
 }
 
+//process
+
+.process {
+  padding-bottom: 65px;
+}
+
+.process .def__title {
+  margin-bottom: 30px;
+  max-width: 490px;
+}
+
+.process__item {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.process__item:nth-child(2n) {
+  .process__item-img {
+    order: 1;
+  }
+}
+
+.process__item-img,
+.process__item-title {
+  width: 50%;
+}
+
+.process__item-title {
+  font: 30px / 38px $rl;
+  text-align: center;
+  height: 100%;
+}
+
 @import "media";
