@@ -561,4 +561,40 @@ input::placeholder {
   width: 100%;
 }
 
+//advantages
+
+.advantages {
+  background-color: $light-blue-bg;
+}
+
+.advantages__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.advantages__item {
+  width: 263px;
+  margin: 10px;
+  text-align: center;
+}
+
+.advantages__item-text {
+  position: relative;
+  font: 14px / 20px $rm;
+  margin-top: 40px;
+  hyphens: auto;
+}
+
+.advantages__item-text::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125px;
+  border-top: 1px solid $light-blue;
+}
+
 @import "media";
