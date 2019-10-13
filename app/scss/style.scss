@@ -48,8 +48,7 @@ input[type="submit"],
 input[type="reset"],
 [type="button"],
 [type="reset"],
-[type="submit"]
-{
+[type="submit"] {
   background: none;
   -webkit-appearance: none;
   color: inherit;
@@ -96,10 +95,7 @@ input:focus {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
 //heder
-
 .header {
   background: url("../img/header-bg.jpg") no-repeat center / cover;
   height: 700px;
@@ -178,7 +174,6 @@ input:focus {
   font: 22px / 28px $rl;
   margin-bottom: 70px;
 }
-
 $border__offer: 1px solid rgba(#fff, .3);
 
 .header__form {
@@ -301,7 +296,7 @@ input::placeholder {
 .def__title {
   font: 36px / 38px $rl;
   color: $black-text-title;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   padding-top: 60px;
   padding-bottom: 22px;
   border-bottom: 1px solid $light-blue;
@@ -419,6 +414,7 @@ input::placeholder {
 .price__box-btns {
   display: flex;
   justify-content: space-between;
+
   .def__btn--small {
     width: 32%;
   }
@@ -440,10 +436,10 @@ input::placeholder {
   width: 18px;
 }
 
-.price__box-btn:hover,
-.price__box-btn.active {
+.price__box-btn.active,
+.price__box-btn:hover {
   box-shadow: inset 0 0 0 7px $light-blue;
-  transition: box-shadow .3s;
+  transition: box-shadow 0.3s;
 }
 
 .def__btn--small {
@@ -462,6 +458,7 @@ input::placeholder {
 .price__results {
   text-align: center;
   font-family: $rr;
+
   .def__btn {
     margin-bottom: 24px;
   }
@@ -480,7 +477,6 @@ input::placeholder {
 .price__results-value {
   font-size: 32px;
   line-height: 32px;
-
   margin-bottom: 10px;
 }
 
@@ -491,12 +487,11 @@ input::placeholder {
 .price__phone {
   font: 18px $rm;
 }
-
 //Potrfolio
-
 .portfolio {
   padding-bottom: 51px;
   text-align: center;
+
   .def__title {
     margin-bottom: 26px;
   }
@@ -523,17 +518,16 @@ input::placeholder {
 }
 
 .portfolio__category {
-  padding: 18px 40px ;
+  padding: 18px 40px;
 }
 
-.portfolio__category:hover,
-.portfolio__category.active {
+.portfolio__category.active,
+.portfolio__category:hover {
   background-color: $light-blue;
   color: #fff;
   border-radius: 10px;
   position: relative;
-
-  transition: .25s;
+  transition: 0.25s;
   transform: scale(1.14, 1.14);
 }
 
@@ -560,9 +554,7 @@ input::placeholder {
   max-width: 1170px;
   width: 100%;
 }
-
 //advantages
-
 .advantages {
   background-color: $light-blue-bg;
 }
@@ -596,9 +588,7 @@ input::placeholder {
   width: 125px;
   border-top: 1px solid $light-blue;
 }
-
 //process
-
 .process {
   padding-bottom: 65px;
 }
@@ -630,5 +620,128 @@ input::placeholder {
   text-align: center;
   height: 100%;
 }
+//slider
+.slider {
+  background-color: $light-blue-bg;
+  padding-bottom: 62px;
+}
 
+.slider .def__title {
+  max-width: 585px;
+}
+
+.slider__items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.slider__item {
+  width: 150px;
+  height: 83px;
+  text-align: center;
+  cursor: grab;
+  outline: none;
+
+  img {
+    outline: none;
+    display: inline;
+    object-fit: contain;
+  }
+}
+
+.slider__item:active {
+  cursor: grabbing;
+}
+
+.slider__range {
+  appearance: none;
+  cursor: pointer;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e3e7e8;
+}
+
+.slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 32px;
+  height: 11px;
+  background-image: url("../img/range.png");
+}
+//team
+.team__items {
+  max-width: 1015px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.team__item {
+  max-width: 230px;
+  width: 100%;
+  margin: 25px;
+}
+
+.team__item-name {
+  font: 24px / 25px $rl;
+  color: $light-blue;
+  margin-top: 20px;
+}
+
+.team__item-text {
+  font: 16px / 27px $rl;
+  margin-top: 7px;
+}
+
+.team__quote {
+  margin-top: 73px;
+  text-align: center;
+  font: 18px / 26px $rl;
+  position: relative;
+  padding: 16px 95px;
+}
+
+.team__quote::after,
+.team__quote::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/quotes.png");
+  height: 37px;
+  width: 47px;
+}
+
+.team__quote::before {
+  top: 0;
+  left: 0;
+}
+
+.team__quote::after {
+  right: 0;
+  bottom: 0;
+  transform: scale(-1, 1);
+}
+
+.team__quote-title {
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+
+.team__quote-text {
+  margin-bottom: 13px;
+}
+
+.team__quote-subtitle {
+  font-size: 16px;
+
+  span {
+    font: 18px $rm;
+    margin-bottom: 10px;
+  }
+}
+
+//blog
 @import "media";
