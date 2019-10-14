@@ -1,4 +1,11 @@
 @import "fonts";
+// $fa_path: "../../node_modules/font-awesome/scss";
+// @import "../../node_modules/font-awesome/scss/variables.scss";
+// @import "../../node_modules/font-awesome/scss/mixins.scss";
+// @import "../../node_modules/font-awesome/scss/path.scss";
+// @import "../../node_modules/font-awesome/scss/core.scss";
+// @import "../../node_modules/font-awesome/scss/icons.scss";
+// @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "vars";
 @import "libs";
 
@@ -59,6 +66,11 @@ input[type="reset"],
   outline: inherit;
 }
 
+textarea {
+  resize: none;
+  outline: none;
+}
+
 button::selection {
   background-color: transparent;
 }
@@ -72,6 +84,7 @@ body {
 
 input {
   border: none;
+  outline: none;
 }
 
 input:focus {
@@ -351,7 +364,7 @@ input::placeholder {
   margin: 24px auto 38px;
 }
 
-.def__title_invert {
+.def__title--invert {
   color: #fff;
   border-color: #fff;
 }
@@ -669,7 +682,11 @@ input::placeholder {
   height: 11px;
   background-image: url("../img/range.png");
 }
+
 //team
+.team {
+  padding-bottom: 63px;
+}
 .team__items {
   max-width: 1015px;
   width: 100%;
@@ -744,4 +761,146 @@ input::placeholder {
 }
 
 //blog
+
+.blog {
+  padding-bottom: 63px;
+  background-color: $light-blue-bg;
+}
+
+.blog__items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.blog__item {
+  max-width: 555px;
+  width: 100%;
+}
+
+.blog__item-title {
+  margin-top: 33px;
+  font: 18px / 24px $rl;
+  color: $light-blue;
+}
+
+.blog__item-title:hover {
+  text-decoration: underline;
+}
+
+//contacts
+
+.contacts {
+  background: url(../img/form-bg.jpg) no-repeat center / cover;
+  padding-bottom: 68px;
+  color: #fff;
+}
+
+.contacts__headline {
+  text-align: center;
+  font: 26px / 36px $rl;
+  margin-bottom: 45px;
+}
+
+.contacts__items {
+  display: flex;
+}
+
+.contacts__form {
+  max-width: 750px;
+  width: 100%;
+  text-align: center;
+
+  .def__btn {
+    display: inline-block;
+  }
+}
+
+.contacts__form-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+  input {
+    max-width: 240px;
+    height: 48px;
+    padding: 20px;
+    border-radius: 9px;
+    border: 1px solid rgba(#000, 0.11);
+    width: 100%;
+  }
+
+  input::placeholder {
+    font: 13px / 24px $rl;
+  }
+}
+
+.contacts__form-area {
+  border-radius: 9px;
+  border: 1px solid rgba(#000, 0.11);
+  width: 750px;
+  height: 122px;
+  padding: 20px;
+  margin-bottom: 17px;
+}
+
+.contacts__form-area::placeholder {
+  font: 13px / 24px $rl;
+}
+
+.contacts__list {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.contacts__list-item {
+  display: block;
+  font: 18px / 24px $rm;
+  padding-left: 41px;
+  position: relative;
+}
+
+.contacts__list-item::before {
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  height: 27px;
+  width: 27px;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.contacts__list-item--phone::before {
+  content: '\f879';
+}
+
+.contacts__list-item--whatsapp::before {
+  content: '\f232';
+}
+
+.contacts__list-item--mail::before {
+  content: '\f0e0';
+}
+
+.contacts__list-item--skype::before {
+  content: '\f17e';
+}
+
+.contacts__list-item--telegram::before {
+  content: '\f1d8';
+}
+
+.contacts__list a + a {
+  margin-top: 18px;
+}
+
+.contacts__text {
+  margin-top: 32px;
+  font: 16px / 24px $rl;
+}
 @import "media";
