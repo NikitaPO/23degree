@@ -148,6 +148,7 @@ input:focus {
 .header__contacts-text {
   font-family: $rl;
   font-size: 12px;
+  margin-bottom: 4px;
 }
 
 .header__phone {
@@ -903,4 +904,10 @@ input::placeholder {
   margin-top: 32px;
   font: 16px / 24px $rl;
 }
+
+.map iframe {
+  width: 100%;
+  height: 600px;
+}
+
 @import "media";
