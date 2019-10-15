@@ -38,7 +38,26 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .blog {
+    padding-bottom: 30px;
+  }
+
+  .blog__item {
+    padding: 15px;
+  }
+
+  .blog__item img{
+    max-width: 555px;
+    width: 100%;
+  }
+
+  .blog__item-title {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
+
 @media screen and (max-width: 880px) {
   .def__title {
     font-size: 22px;
@@ -310,6 +329,10 @@
     width: 37px;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .blog__items {
+    flex-direction: column;
   }
 }
 
