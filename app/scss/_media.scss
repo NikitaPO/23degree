@@ -96,6 +96,25 @@
     font-size: 20px;
     line-height: 22px;
   }
+
+  .team__items {
+    justify-content: center;
+  }
+
+  .team__item img{
+    max-width: 180px;
+    width: 100%;
+  }
+
+  .team__item-name {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .team__item-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 
 
@@ -104,6 +123,27 @@
   .portfolio__item {
     max-width: 220px;
     width: 100%;
+  }
+
+  .team__quote {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .team__quote-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .team__quote-text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .team__quote-subtitle {
+    font-size: 12px;
+    span {
+      font-size: 14px;
+    }
   }
 
 }
@@ -133,6 +173,11 @@
 
   .portfolio__categories {
     flex-wrap: wrap;
+  }
+
+  .team__item {
+    max-width: 120px;
+    width: 100%;
   }
 
 }
@@ -251,6 +296,21 @@
     font-size: 16px;
   }
 
+  .team {
+    padding-bottom: 20px;
+  }
+
+  .team__quote {
+    margin-top: 10px;
+  }
+
+  .team__quote::after,
+  .team__quote::before {
+    height: 27px;
+    width: 37px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -285,5 +345,10 @@
 
   .advantages__item {
     margin: 30px;
+  }
+
+  .team__item {
+    max-width: 430px;
+    width: 100%;
   }
 }
