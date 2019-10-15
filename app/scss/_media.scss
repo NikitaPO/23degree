@@ -25,7 +25,7 @@
   }
 
   .price__boxes {
-    margin: 0 auto 40px auto;
+    margin: 0 auto 40px;
   }
 
   .price__results {
@@ -47,7 +47,7 @@
     padding: 15px;
   }
 
-  .blog__item img{
+  .blog__item img {
     max-width: 555px;
     width: 100%;
   }
@@ -91,7 +91,6 @@
     text-align: center;
   }
 }
-
 @media screen and (max-width: 880px) {
   .def__title {
     font-size: 22px;
@@ -110,6 +109,7 @@
 
   .services__item-img {
     text-align: center;
+
     img {
       max-width: 555px;
       width: 100%;
@@ -125,8 +125,7 @@
     padding: 0;
   }
 
-  .services__item_left
-  .services__item-box  {
+  .services__item_left .services__item-box {
     padding: 0;
   }
 
@@ -155,7 +154,7 @@
     justify-content: center;
   }
 
-  .team__item img{
+  .team__item img {
     max-width: 180px;
     width: 100%;
   }
@@ -200,9 +199,6 @@
     margin-top: 20px;
   }
 }
-
-
-
 @media screen and (max-width: 780px) {
   .portfolio__item {
     max-width: 220px;
@@ -210,7 +206,7 @@
   }
 
   .team__quote {
-    padding: 40px 20px 20px 20px;
+    padding: 40px 20px 20px;
   }
 
   .team__quote-title {
@@ -225,6 +221,7 @@
 
   .team__quote-subtitle {
     font-size: 12px;
+
     span {
       font-size: 14px;
     }
@@ -234,12 +231,13 @@
     padding-bottom: 30px;
   }
 
-  .contacts__form-inputs{
+  .contacts__form-inputs {
     flex-direction: column;
     width: 100%;
 
     input {
-    max-width: 100%;
+      max-width: 100%;
+      width: 100%;
     }
 
     input + input {
@@ -256,9 +254,7 @@
     margin: 10px;
     text-align: center;
   }
-
 }
-
 @media screen and (max-width: 660px) {
   .def__subtitle {
     font-size: 20px;
@@ -295,7 +291,6 @@
     width: 70%;
   }
 }
-
 @media screen and (max-width: 576px) {
   .def__title {
     padding-top: 30px;
@@ -303,11 +298,13 @@
   }
 
   .header {
-    padding: 0 0 10px 0;
+    padding: 0 0 10px;
   }
+
   .header__offer-text {
     margin-bottom: 20px;
   }
+
   .header__navigation {
     align-items: center;
   }
@@ -345,8 +342,8 @@
     position: static;
   }
 
-  .header__form-inputs::before,
-  .header__form-inputs::after {
+  .header__form-inputs::after,
+  .header__form-inputs::before {
     display: none;
   }
 
@@ -434,7 +431,6 @@
     width: 50%;
   }
 }
-
 @media screen and (max-width: 500px) {
   .portfolio__item {
     max-width: 380px;
@@ -442,10 +438,10 @@
   }
 
   .slider__items {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
-  .slider__item img{
+  .slider__item img {
     width: 80px;
   }
 
@@ -461,13 +457,11 @@
     padding-right: 20px;
   }
 }
-
 @media screen and (max-width: 490px) {
   .price__results-items {
     flex-direction: column;
   }
 }
-
 @media screen and (max-width: 430px) {
   .header__contacts {
     display: none;
