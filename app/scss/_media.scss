@@ -80,9 +80,28 @@
   .price__results-value {
     font-size: 23px;
   }
+
+  .portfolio {
+    padding-bottom: 20px;
+  }
+
+  .portfolio__categories {
+    font-size: 10px;
+  }
+
+  .portfolio__category {
+    padding: 15px;
+  }
 }
 
 
+
+@media screen and (max-width: 780px) {
+  .portfolio__item {
+    max-width: 220px;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 660px) {
   .def__subtitle {
@@ -97,6 +116,20 @@
   .price__box-btns-text {
     font-size: 14px;
   }
+
+  .portfolio__categories-wrapper {
+    border: none;
+  }
+
+  .portfolio__category {
+    border: 1px solid $light-blue;
+    border-radius: 5px;
+  }
+
+  .portfolio__categories {
+    flex-wrap: wrap;
+  }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -190,6 +223,13 @@
     margin-bottom: 4px;
   }
 
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio__item {
+    max-width: 380px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 490px) {
