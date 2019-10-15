@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 880px) {
   .def__title {
-    font-size: 26px  ;
+    font-size: 22px;
   }
 
   .services {
@@ -91,6 +91,11 @@
   .portfolio__category {
     padding: 15px;
   }
+
+  .process__item-title {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 
@@ -100,6 +105,7 @@
     max-width: 220px;
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 660px) {
@@ -133,7 +139,8 @@
 
 @media screen and (max-width: 576px) {
   .def__title {
-    padding-top: 3  0px;
+    padding-top: 30px;
+    line-height: 25px;
   }
 
   .header {
@@ -236,12 +243,28 @@
     margin-top: 20px;
   }
 
+  .process {
+    padding-bottom: 30px;
+  }
+
+  .process__item-title {
+    font-size: 16px;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
   .portfolio__item {
     max-width: 380px;
     width: 100%;
+  }
+
+  .slider__items {
+    margin-bottom: 0px;
+  }
+
+  .slider__item img{
+    width: 80px;
   }
 }
 

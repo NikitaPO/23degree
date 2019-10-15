@@ -9,7 +9,23 @@ $(function() {
     slidesToShow: showSlides,
     slidesToScroll: scrollSlides,
     appendArrows: false,
-    adaptiveHeight: true
+    adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      }
+    ]
   })
 
   // $(slider).on('init reInit',function(event,slick){
