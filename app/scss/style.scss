@@ -574,7 +574,8 @@ input::placeholder {
 }
 
 .advantages__item {
-  width: 263px;
+  max-width: 263px;
+  width: 100%;
   margin: 10px;
   text-align: center;
 }
