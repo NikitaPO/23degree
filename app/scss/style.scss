@@ -111,8 +111,8 @@ input:focus {
 //heder
 .header {
   background: url("../img/header-bg.jpg") no-repeat center / cover;
-  height: 700px;
   color: #fff;
+  padding-bottom: 40px;
 }
 
 .header__top {
@@ -355,8 +355,8 @@ input::placeholder {
 
 .price {
   background: url("../img/price-bg.jpg") no-repeat center / cover;
-  height: 622px;
   color: #fff;
+  padding-bottom: 55px;
 }
 
 .def__subtitle {
