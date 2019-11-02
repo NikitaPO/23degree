@@ -100,6 +100,9 @@ gulp.task('export', async function() {
 
   let buildVideo = gulp.src('app/video/**/*.*')
     .pipe(gulp.dest('dist/video'))
+
+  let buildLibs = gulp.src('app/libs/**/*.*')
+    .pipe(gulp.dest('dist/libs'))
 });
 
 gulp.task('build', gulp.series('del', 'export'));

@@ -59,9 +59,20 @@ input[type="reset"],
   outline: inherit;
 }
 
+// button:focus,
+// input[type="submit"]:focus,
+// input[type="reset"]:focus,
+// [type="button"]:focus,
+// [type="reset"]:focus,
+// [type="submit"]:focus {
+//   box-shadow:
+//     0 0 0 3px #ffffff,
+//     0 0 0 6px #c7f4fc;
+//   outline: none;
+// }
+
 textarea {
   resize: none;
-  outline: none;
 }
 
 button::selection {
@@ -77,11 +88,6 @@ body {
 
 input {
   border: none;
-  outline: none;
-}
-
-input:focus {
-  outline: none;
 }
 
 .visually-hidden {
@@ -113,7 +119,6 @@ input:focus {
   padding-bottom: 55px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .header__navigation {
@@ -121,6 +126,7 @@ input:focus {
   justify-content: space-between;
   max-width: 322px;
   width: 100%;
+  padding-top: 10px;
 }
 
 .header__contacts {
@@ -155,6 +161,12 @@ input:focus {
 
   i {
     font-size: 25px;
+    transition: .3s;
+  }
+
+  i:hover {
+    cursor: pointer;
+    font-size: 28px;
   }
 }
 
@@ -392,6 +404,11 @@ input::placeholder {
   position: relative;
 }
 
+.price__box-btn-inner {
+  height: 18px;
+  width: 18px;
+}
+
 .price__box-runner::before {
   content: '';
   position: absolute;
@@ -434,8 +451,14 @@ input::placeholder {
   text-align: center;
 }
 
-.price__box-btn {
+.price__box-btn-inner {
   position: relative;
+}
+
+.price__box-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 50%;
   z-index: 10;
   background-color: #fff;
@@ -650,7 +673,6 @@ input::placeholder {
   height: 83px;
   text-align: center;
   cursor: grab;
-  outline: none;
 
   img {
     outline: none;
