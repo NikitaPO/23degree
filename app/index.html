@@ -3,27 +3,46 @@
 
 <head>
   <title>23degrees</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <script src="https://kit.fontawesome.com/cf02223ec3.js"></script>
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
+<a href="#header" class="scrollToTop">
+  <i class="far fa-arrow-alt-circle-up"></i>
+</a>
+
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__top">
         <div class="header__logo">
           <img src="img/logo.png" alt="23degree">
         </div>
-        <div class="header__navigation">
+        <div class="header__items">
           <div class="header__contacts">
             <div class="header__contacts-text">Есть вопросы? Звоните!</div>
             <a class="header__phone" href="tel:88002590936">8 /800/ 259 09 36</a>
           </div>
           <div class="header__menu">
-            <i class="fas fa-bars"></i>
+            <i class="fas fa-bars header__menu-burger"></i>
+            <div class="header__nav-wrapper not-active">
+              <ul class="header__nav">
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#team">Наша команда</a></li>
+                <li><a href="#advantages">Преемущества</a></li>
+                <li><a href="#price">Стоимость</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
             <div class="header__menu-text">
               МЕНЮ
             </div>
@@ -51,7 +70,7 @@
             </div>
             <div class="header__btn-inner">
               <div class="header__btn-line header__btn-line--before"></div>
-              <a class="def__btn" type="submit">Оставить заявку!</a>
+              <input class="def__btn" type="submit" value="Оставить заявку!">
               <div class="header__btn-line header__btn-line--after"></div>
             </div>
           </form>
@@ -76,7 +95,7 @@
           <div class="services__item-text">
             Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении
           </div>
-          <a href="#" class="def__btn">Оставить заявку</a>
+          <a href="#contacts" class="def__btn">Оставить заявку</a>
         </div>
         <div class="services__item-img">
           <img src="img/services-item1.jpg" alt="">
@@ -114,7 +133,7 @@
     </div>
   </section>
 
-  <section class="price">
+  <section class="price" id="price">
     <div class="container">
       <div class="def__title def__title--invert">
         Расчитать стоимость
@@ -213,7 +232,7 @@
     </div>
   </section>
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="def__title">
         Портфолио
@@ -239,7 +258,7 @@
     </div>
   </section>
 
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="container">
       <div class="def__title">
         Почему мы лучшие?
@@ -429,11 +448,11 @@
         </div>
 
       </div>
-      <input class="slider__range" type="range">
+      <input class="slider__range" type="range" min="1">
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <div class="def__title">Наша команда</div>
       <div class="team__items">
@@ -479,7 +498,7 @@
     </div>
   </section>
 
-  <section class="blog">
+  <section class="blog" id="blog">
     <div class="container">
       <div class="def__title">Блог</div>
       <div class="blog__items">
@@ -497,7 +516,7 @@
     </div>
   </section>
 
-  <section class="contacts">
+  <section class="contacts" id="contacts">
     <div class="container">
       <div class="def__title def__title--invert">
         Остались вопросы?

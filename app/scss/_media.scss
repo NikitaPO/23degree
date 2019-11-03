@@ -467,6 +467,10 @@
     display: none;
   }
 
+  .header__items {
+    justify-content: flex-end;
+  }
+
   .header__navigation {
     justify-content: flex-end;
   }

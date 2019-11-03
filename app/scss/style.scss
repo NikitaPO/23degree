@@ -84,10 +84,19 @@ body {
   font-family: $rt;
   line-height: 19px;
   color: $black-text;
+  position: relative;
 }
 
 input {
   border: none;
+}
+
+.not-active {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .visually-hidden {
@@ -107,6 +116,20 @@ input {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  transition: .3s;
+  color: rgba($light-blue, .3);
+}
+
+.scrollToTop:hover {
+  color: rgba($light-blue, 1);
+}
+
 //heder
 .header {
   background: url("../img/header-bg.jpg") no-repeat center / cover;
@@ -121,7 +144,7 @@ input {
   justify-content: space-between;
 }
 
-.header__navigation {
+.header__items {
   display: flex;
   justify-content: space-between;
   max-width: 322px;
@@ -159,15 +182,63 @@ input {
 .header__menu {
   text-align: center;
 
-  i {
+  .header__menu-burger {
     font-size: 25px;
     transition: .3s;
   }
 
-  i:hover {
+  .header__menu-burger:hover {
     cursor: pointer;
     font-size: 28px;
   }
+}
+
+.header__nav-wrapper {
+  position: fixed;
+  z-index: 20;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba(#000, .2);
+}
+
+.header__nav {
+  position: absolute;
+  z-index: 22;
+  max-width: 260px;
+  width: 100%;
+  right: -260px;
+  top: 0;
+  background-color: #fff;
+  height: 100vh;
+  padding-top: 50px;
+
+  li {
+    cursor: pointer;
+    transition: background-color .3s;
+    background-color: rgba(#000, 0);
+  }
+
+  li:hover {
+    background-color: rgba(#000, .1);
+  }
+
+  li + li {
+    border-top: 1px solid rgba(#000, .2);
+  }
+
+  a {
+    color: #000;
+    display: inline-block;
+    padding: 10px 80px 10px 60px;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.header__menu-close-btn:hover {
+  transform: rotate(180deg);
 }
 
 .header__menu-text {
@@ -263,13 +334,14 @@ $border__offer: 1px solid rgba(#fff, .3);
     border-radius: 50px;
     box-shadow: 1px 1px 15px 0 #00000069;
   }
+
+  input::placeholder {
+    font: 13px / 13px $rl;
+    color: #606060;
+  }
 }
 
-input::placeholder {
-  font: 13px / 13px $rl;
-  color: #606060;
-}
-
+input.def__btn,
 .def__btn {
   background: $light-blue;
   cursor: pointer;
@@ -686,6 +758,7 @@ input::placeholder {
 }
 
 .slider__range {
+  display: none;
   appearance: none;
   cursor: pointer;
   height: 5px;
@@ -888,9 +961,17 @@ input::placeholder {
   padding: 7px;
   border-radius: 3px;
   border: 1px solid #fff;
+  background-color: rgba(#fff, 0);
+  transition: .5s;
   left: 0;
   top: 0;
   position: absolute;
+}
+
+.contacts__list-item:hover {
+  &::before {
+    background-color: rgba(#fff, .5);
+  }
 }
 
 .contacts__list-item--phone::before {
