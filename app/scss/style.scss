@@ -611,16 +611,16 @@ input.def__btn,
   justify-content: center;
   padding: 3px 0;
   font: 14px / 14px $rl;
-  text-transform: uppercase;
   color: $light-blue;
 
-  a + a {
+  .portfolio__category + .portfolio__category {
     border-left: 1px solid $light-blue;
   }
 }
 
 .portfolio__category {
   padding: 18px 40px;
+  text-transform: uppercase;
 }
 
 .portfolio__category.active,
