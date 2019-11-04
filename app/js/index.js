@@ -89,11 +89,11 @@ $(function() {
     let metersCost;
 
     if (activePackage === "Light") {
-      metersCost = 400;
+      metersCost = 100;
     } else if (activePackage === "Medium") {
-      metersCost = 790;
+      metersCost = 250;
     } else if (activePackage === "Full") {
-      metersCost = 1340;
+      metersCost = 400;
     };
 
     let objectCost = metersCost * areaPrice;
