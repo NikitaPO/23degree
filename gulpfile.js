@@ -12,7 +12,7 @@ const autoprefixer = require('gulp-autoprefixer'),
   uglify = require('gulp-uglify');
 
 gulp.task('del', async function() {
-  del.sync('dist');
+  del.sync('docs');
 });
 
 gulp.task('scss', function() {
@@ -83,26 +83,26 @@ gulp.task('browser-sync', function() {
 
 gulp.task('export', async function() {
   let buildHtml = gulp.src('app/**/*.html')
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('docs'))
 
   let buildCSS = gulp.src('app/css/**/*.min.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('docs/css'))
 
   let buildJS = gulp.src('app/js/**/*.min.js')
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('docs/js'))
 
   let buildFonts = gulp.src('app/fonts/**/*.*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('docs/fonts'))
 
   let buildImg = gulp.src('app/img/**/*.*')
-    .pipe(gulp.dest('dist/img'))
+    .pipe(gulp.dest('docs/img'))
 
   let buildVideo = gulp.src('app/video/**/*.*')
-    .pipe(gulp.dest('dist/video'))
+    .pipe(gulp.dest('docs/video'))
 
   let buildLibs = gulp.src('app/libs/**/*.*')
-    .pipe(gulp.dest('dist/libs'))
+    .pipe(gulp.dest('docs/libs'))
 });
 
 gulp.task('build', gulp.series('del', 'export'));
