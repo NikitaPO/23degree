@@ -132,9 +132,20 @@ input {
 
 //heder
 .header {
-  background: url("../img/header-bg.jpg") no-repeat center / cover;
   color: #fff;
   padding-bottom: 40px;
+}
+
+.header-bg {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+  background: url("../img/header-bg.jpg") no-repeat center / cover;
+}
+
+.header .container {
+  // margin-top: -100vh;
 }
 
 .header__top {
@@ -378,6 +389,7 @@ input.def__btn,
 
 .services {
   padding-bottom: 73px;
+  background-color: #fff;
 
   .services__item + .services__item {
     margin-top: 21px;

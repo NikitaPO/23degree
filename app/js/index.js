@@ -124,5 +124,14 @@ $(function() {
     console.log(category);
   });
 
+  let scrollPosition = 0;
 
+  document.addEventListener('scroll', function() {
+    scrollPosition = window.pageYOffset;
+    document.querySelector('.parallaxed').style.transform = `translateY(${scrollPosition/2}px)`;
+    console.log(scrollPosition);
+  });
+
+
+  
 });
