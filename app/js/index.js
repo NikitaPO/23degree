@@ -129,9 +129,5 @@ $(function() {
   document.addEventListener('scroll', function() {
     scrollPosition = window.pageYOffset;
     document.querySelector('.parallaxed').style.transform = `translateY(${scrollPosition/2}px)`;
-    console.log(scrollPosition);
   });
-
-
-  
 });
