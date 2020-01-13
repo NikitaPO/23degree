@@ -130,22 +130,21 @@ input {
   color: rgba($light-blue, 1);
 }
 
+.parallaxed {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -10;
+}
+
 //heder
 .header {
   color: #fff;
   padding-bottom: 40px;
 }
 
-.header-bg {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
-  z-index: -10;
+.header__bg {
   background: url("../img/header-bg.jpg") no-repeat center / cover;
-}
-
-.header .container {
-  // margin-top: -100vh;
 }
 
 .header__top {
@@ -443,6 +442,7 @@ input.def__btn,
 //price
 
 .price {
+  z-index: -10;
   background: url("../img/price-bg.jpg") no-repeat center / cover;
   color: #fff;
   padding-bottom: 55px;
@@ -605,6 +605,7 @@ input.def__btn,
 .portfolio {
   padding-bottom: 51px;
   text-align: center;
+  background: #ffffff;
 
   .def__title {
     margin-bottom: 26px;

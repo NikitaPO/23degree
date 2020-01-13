@@ -432,6 +432,10 @@
   }
 }
 @media screen and (max-width: 500px) {
+  .portfolio__items {
+    padding: 0px 20px;
+  }
+
   .portfolio__item {
     max-width: 380px;
     width: 100%;
@@ -474,6 +478,10 @@
   .header__navigation {
     justify-content: flex-end;
   }
+
+  // .portfolio__item {
+  //   padding: 30px;
+  // }
 
   .advantages__item {
     margin: 30px;

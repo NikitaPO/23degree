@@ -120,8 +120,6 @@ $(function() {
     } else {
       $('.portfolio__item').fadeIn(300);
     }
-
-    console.log(category);
   });
 
   let scrollPosition = 0;
