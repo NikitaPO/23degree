@@ -1,598 +1,671 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <title>23degrees</title>
 
-<head>
-  <title>23degrees</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
 
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <a href="#header" class="scrollToTop">
+      <i class="far fa-arrow-alt-circle-up"></i>
+    </a>
 
-  <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
-  <a href="#header" class="scrollToTop">
-    <i class="far fa-arrow-alt-circle-up"></i>
-  </a>
-
-  <header class="header" id="header">
-    <div class="header__bg parallaxed">
-    </div>
-    <div class="container">
-      <div class="header__top">
-        <div class="header__logo">
-          <img src="img/logo.webp" alt="23degree">
-        </div>
-        <div class="header__items">
-          <div class="header__contacts">
-            <div class="header__contacts-text">Есть вопросы? Звоните!</div>
-            <a class="header__phone" href="tel:88002590936">8 /800/ 259 09 36</a>
+    <header class="header" id="header">
+      <div class="header__bg parallaxed"></div>
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <img src="img/logo.webp" alt="23degree" />
           </div>
-          <div class="header__menu">
-            <i class="fas fa-bars header__menu-burger"></i>
-            <div class="header__nav-wrapper not-active">
-              <ul class="header__nav">
-                <li><a href="#portfolio">Портфолио</a></li>
-                <li><a href="#team">Наша команда</a></li>
-                <li><a href="#advantages">Преемущества</a></li>
-                <li><a href="#price">Стоимость</a></li>
-                <li><a href="#blog">Блог</a></li>
-                <li><a href="#contacts">Контакты</a></li>
-              </ul>
+          <div class="header__items">
+            <div class="header__contacts">
+              <div class="header__contacts-text">Есть вопросы? Звоните!</div>
+              <a class="header__phone" href="tel:88002590936"
+                >8 /800/ 259 09 36</a
+              >
             </div>
-            <div class="header__menu-text">
-              МЕНЮ
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="header__offer">
-        <div class="header__offer-text-box">
-          <div class="header__offer-title">
-            Услуги по 3D моделированию
-          </div>
-          <div class="header__offer-subtitle">
-            полный спектр услуг
-          </div>
-          <div class="header__subtitle">
-            Оставьте заявку сейчас и получите дизайн интерьера 25кв2 бесплатно!*
-          </div>
-        </div>
-        <div class="header__form">
-          <form>
-            <div class="header__form-inputs">
-              <input type="text" placeholder="Ваше имя">
-              <input type="text" placeholder="E-mail">
-              <input type="tel" placeholder="Номер телефона">
-            </div>
-            <div class="header__btn-inner">
-              <div class="header__btn-line header__btn-line--before"></div>
-              <input class="def__btn" type="submit" value="Оставить заявку!">
-              <div class="header__btn-line header__btn-line--after"></div>
-            </div>
-          </form>
-        </div>
-        <div class="header__offer-text">
-          *Мы гарантируем конфидициальность передаваемых данных
-        </div>
-        <img class="header__img-mouse" src="img/mouse.webp" alt="mouse down">
-      </div>
-    </div>
-  </header>
-
-  <section class="services">
-    <div class="container">
-      <div class="def__title">Наши услуги</div>
-
-      <div class="services__item">
-        <div class="services__item-box">
-          <div class="services__item-title">
-            Дизайн интерьера
-          </div>
-          <div class="services__item-text">
-            Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении
-          </div>
-          <a href="#contacts" class="def__btn">Оставить заявку</a>
-        </div>
-        <div class="services__item-img">
-          <img src="img/services-item1.webp" alt="">
-        </div>
-      </div>
-
-      <div class="services__item services__item_left">
-        <div class="services__item-box">
-          <div class="services__item-title">
-            Дизайн интерьера
-          </div>
-          <div class="services__item-text">
-            Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении
-          </div>
-        </div>
-        <div class="services__item-img">
-          <img src="img/services-item2.webp" alt="">
-        </div>
-      </div>
-
-      <div class="services__item">
-        <div class="services__item-box">
-          <div class="services__item-title">
-            Дизайн интерьера
-          </div>
-          <div class="services__item-text">
-            Услуга, направленная на разработку интерьеров помещений с целью обеспечить удобство и эстетически приятное ощущение у человека при нахождении в помещении
-          </div>
-        </div>
-        <div class="services__item-img">
-          <img src="img/services-item3.webp" alt="">
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="price" id="price">
-    <div class="container">
-      <div class="def__title def__title--invert">
-        Расчитать стоимость
-      </div>
-      <div class="def__subtitle">
-        Расчитайте предварительную стоимость разработки интерьера
-      </div>
-      <div class="price__wrapper">
-        <div class="price__boxes">
-          <div class="price__box">
-            <div class="price__box-title">Площадь помещения:</div>
-            <div class="price__box-runner">
-
-              <div class="price__box-runner-text">
-                <div class="price__box-btns-text">
-                  1 000м<sup>2</sup>
-                </div>
-                <div class="price__box-btns-text">
-                  10 000м<sup>2</sup>
-                </div>
-                <div class="price__box-btns-text">
-                  250 000м<sup>2</sup>
-                </div>
-                <div class="price__box-btns-text">
-                  500 000м<sup>2</sup>
-                </div>
+            <div class="header__menu">
+              <i class="fas fa-bars header__menu-burger"></i>
+              <div class="header__nav-wrapper not-active">
+                <ul class="header__nav">
+                  <li><a href="#portfolio">Портфолио</a></li>
+                  <li><a href="#team">Наша команда</a></li>
+                  <li><a href="#advantages">Преемущества</a></li>
+                  <li><a href="#price">Стоимость</a></li>
+                  <li><a href="#blog">Блог</a></li>
+                  <li><a href="#contacts">Контакты</a></li>
+                </ul>
               </div>
+              <div class="header__menu-text">МЕНЮ</div>
+            </div>
+          </div>
+        </div>
+        <div class="header__offer">
+          <div class="header__offer-text-box">
+            <div class="header__offer-title">Услуги по 3D моделированию</div>
+            <div class="header__offer-subtitle">полный спектр услуг</div>
+            <div class="header__subtitle">
+              Оставьте заявку сейчас и получите дизайн интерьера 25кв2
+              бесплатно!*
+            </div>
+          </div>
+          <div class="header__form">
+            <form>
+              <div class="header__form-inputs">
+                <input type="text" placeholder="Ваше имя" />
+                <input type="text" placeholder="E-mail" />
+                <input type="tel" placeholder="Номер телефона" />
+              </div>
+              <div class="header__btn-inner">
+                <div class="header__btn-line header__btn-line--before"></div>
+                <input
+                  class="def__btn"
+                  type="submit"
+                  value="Оставить заявку!"
+                />
+                <div class="header__btn-line header__btn-line--after"></div>
+              </div>
+            </form>
+          </div>
+          <div class="header__offer-text">
+            *Мы гарантируем конфидициальность передаваемых данных
+          </div>
+          <img
+            class="header__img-mouse"
+            src="img/mouse.webp"
+            alt="mouse down"
+          />
+        </div>
+      </div>
+    </header>
 
-              <div class="price__box-runner-btns">
-                <div class="price__box-btn-inner">
-                  <button class="price__box-btn price__box-btn_1 active"></button>
+    <section class="services">
+      <div class="container">
+        <div class="def__title">Наши услуги</div>
+
+        <div class="services__item">
+          <div class="services__item-box">
+            <div class="services__item-title">Дизайн интерьера</div>
+            <div class="services__item-text">
+              Услуга, направленная на разработку интерьеров помещений с целью
+              обеспечить удобство и эстетически приятное ощущение у человека при
+              нахождении в помещении
+            </div>
+            <a href="#contacts" class="def__btn">Оставить заявку</a>
+          </div>
+          <div class="services__item-img">
+            <img src="img/services-item1.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="services__item services__item_left">
+          <div class="services__item-box">
+            <div class="services__item-title">Дизайн интерьера</div>
+            <div class="services__item-text">
+              Услуга, направленная на разработку интерьеров помещений с целью
+              обеспечить удобство и эстетически приятное ощущение у человека при
+              нахождении в помещении
+            </div>
+          </div>
+          <div class="services__item-img">
+            <img src="img/services-item2.webp" alt="" />
+          </div>
+        </div>
+
+        <div class="services__item">
+          <div class="services__item-box">
+            <div class="services__item-title">Дизайн интерьера</div>
+            <div class="services__item-text">
+              Услуга, направленная на разработку интерьеров помещений с целью
+              обеспечить удобство и эстетически приятное ощущение у человека при
+              нахождении в помещении
+            </div>
+          </div>
+          <div class="services__item-img">
+            <img src="img/services-item3.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="price" id="price">
+      <div class="container">
+        <div class="def__title def__title--invert">Расчитать стоимость</div>
+        <div class="def__subtitle">
+          Расчитайте предварительную стоимость разработки интерьера
+        </div>
+        <div class="price__wrapper">
+          <div class="price__boxes">
+            <div class="price__box">
+              <div class="price__box-title">Площадь помещения:</div>
+              <div class="price__box-runner">
+                <div class="price__box-runner-text">
+                  <div class="price__box-btns-text">1 000м<sup>2</sup></div>
+                  <div class="price__box-btns-text">10 000м<sup>2</sup></div>
+                  <div class="price__box-btns-text">250 000м<sup>2</sup></div>
+                  <div class="price__box-btns-text">500 000м<sup>2</sup></div>
                 </div>
-                <div class="price__box-btn-inner">
-                  <button class="price__box-btn price__box-btn_10"></button>
-                </div>
-                <div class="price__box-btn-inner">
-                  <button class="price__box-btn price__box-btn_250"></button>
-                </div>
-                <div class="price__box-btn-inner">
-                  <button class="price__box-btn price__box-btn_500"></button>
+
+                <div class="price__box-runner-btns">
+                  <div class="price__box-btn-inner">
+                    <button
+                      class="price__box-btn price__box-btn_1 active"
+                    ></button>
+                  </div>
+                  <div class="price__box-btn-inner">
+                    <button class="price__box-btn price__box-btn_10"></button>
+                  </div>
+                  <div class="price__box-btn-inner">
+                    <button class="price__box-btn price__box-btn_250"></button>
+                  </div>
+                  <div class="price__box-btn-inner">
+                    <button class="price__box-btn price__box-btn_500"></button>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="price__box">
+              <div class="price__box-title">Выберите пакет:</div>
+              <div class="price__box-btns">
+                <div class="def__btn def__btn--small">Light</div>
+                <div class="def__btn def__btn--small active">Medium</div>
+                <div class="def__btn def__btn--small">Full</div>
+              </div>
+            </div>
           </div>
-          <div class="price__box">
-            <div class="price__box-title">Выберите пакет:</div>
-            <div class="price__box-btns">
-              <div class="def__btn def__btn--small">Light</div>
-              <div class="def__btn def__btn--small active">Medium</div>
-              <div class="def__btn def__btn--small">Full</div>
+          <div class="price__results">
+            <div class="price__results-items">
+              <div class="price__results-item">
+                <div class="price__results-text">Площадь помещения:</div>
+                <div class="price__results-value">
+                  <span class="price__area">1 000</span>м<sup>2</sup>
+                </div>
+              </div>
+
+              <div class="price__results-item">
+                <div class="price__results-text">
+                  Средняя стоимость м<sup>2</sup>:
+                </div>
+                <div class="price__results-value">
+                  <span class="price__meters-cost">250</span> руб.
+                </div>
+              </div>
+
+              <div class="price__results-item">
+                <div class="price__results-text">
+                  Средняя стоимость объекта:
+                </div>
+                <div class="price__results-value">
+                  <span class="price__object-cost">250 000</span> руб.
+                </div>
+              </div>
+            </div>
+            <div class="def__btn">Получить консультацию специалиста</div>
+            <div class="price__results-phone-text">
+              или позвоните нам по телефону:
+            </div>
+            <a href="tel:77273887177" class="price__phone">
+              + 7 727 388 71 77
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="def__title">Портфолио</div>
+        <div class="portfolio__categories-wrapper">
+          <div class="portfolio__categories">
+            <button class="portfolio__category">
+              <span>все проекты</span>
+            </button>
+            <button class="portfolio__category" category="ext">
+              <span>экстерьеры</span>
+            </button>
+            <button class="portfolio__category" category="res">
+              <span>жилые интерьеры</span>
+            </button>
+            <button class="portfolio__category" category="pub">
+              <span>общественные интерьеры</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="portfolio__items-wrapper">
+        <div class="portfolio__items">
+          <img
+            class="portfolio__item"
+            category="ext"
+            src="./img/portfolio-item1.webp"
+            alt="house"
+          />
+          <img
+            class="portfolio__item"
+            category="res"
+            src="./img/portfolio-item2.webp"
+            alt="house"
+          />
+          <img
+            class="portfolio__item"
+            category="ext"
+            src="./img/portfolio-item3.webp"
+            alt="house"
+          />
+          <img
+            class="portfolio__item"
+            category="res"
+            src="./img/portfolio-item4.webp"
+            alt="house"
+          />
+          <img
+            class="portfolio__item"
+            category="pub"
+            src="./img/portfolio-item5.webp"
+            alt="house"
+          />
+          <img
+            class="portfolio__item"
+            category="pub"
+            src="./img/portfolio-item6.webp"
+            alt="house"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="container">
+        <div class="def__title">Почему мы лучшие?</div>
+        <div class="advantages__items">
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item1.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Профессиональные дизайнеры и визуализаторы с зарубежной практикой
+              работы
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item2.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Интеративный подход, работаем до полного согласования с Вами
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item3.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item4.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Над проектом работает группа специалистов под началом project
+              менеджера в ERP системе
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item5.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Выполнение раньше установленных сроков
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <img
+              src="./img/adventages-item6.webp"
+              class="advantages__item-img"
+            />
+            <div class="advantages__item-text">
+              Дарим альбом проекта, вместе с 25% скидкой на следующее обращение
             </div>
           </div>
         </div>
-        <div class="price__results">
-          <div class="price__results-items">
+      </div>
+    </section>
 
-            <div class="price__results-item">
-              <div class="price__results-text">
-                Площадь помещения:
-              </div>
-              <div class="price__results-value">
-                <span class="price__area">1 000</span>м<sup>2</sup>
-              </div>
+    <section class="process">
+      <div class="container">
+        <div class="def__title">Процесс взаимодействия</div>
+        <div class="progress__items">
+          <div class="process__item">
+            <img
+              class="process__item-img"
+              src="./img/process-item1.webp"
+              alt=""
+            />
+            <div class="process__item-title">Заполнение брифа</div>
+          </div>
+
+          <div class="process__item">
+            <img
+              class="process__item-img"
+              src="./img/process-item2.webp"
+              alt=""
+            />
+            <div class="process__item-title">Исследование</div>
+          </div>
+
+          <div class="process__item">
+            <img
+              class="process__item-img"
+              src="./img/process-item3.webp"
+              alt=""
+            />
+            <div class="process__item-title">Идея</div>
+          </div>
+
+          <div class="process__item">
+            <img
+              class="process__item-img"
+              src="./img/process-item4.webp"
+              alt=""
+            />
+            <div class="process__item-title">Завершение</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider">
+      <div class="container">
+        <div class="def__title">Нам доверяют более 50 компаний</div>
+        <div class="slider__items">
+          <div class="slider__item">
+            <img src="./img/slider-item1.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item2.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item3.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item3.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item1.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item2.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item3.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item1.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item2.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item2.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item3.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item1.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item5.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item4.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item2.webp" alt="" />
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider-item6.webp" alt="" />
+          </div>
+        </div>
+        <input class="slider__range" type="range" min="1" />
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <div class="def__title">Наша команда</div>
+        <div class="team__items">
+          <div class="team__item">
+            <img src="./img/team-item1.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Ирина Притыкина</div>
+            <div class="team__item-text">Директор компании</div>
+          </div>
+          <div class="team__item">
+            <img src="./img/team-item2.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Игорь Карий</div>
+            <div class="team__item-text">Финансовый директор</div>
+          </div>
+          <div class="team__item">
+            <img src="./img/team-item3.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Илья Кондрашин</div>
+            <div class="team__item-text">Инженер модельер</div>
+          </div>
+          <div class="team__item">
+            <img src="./img/team-item4.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Маргарита Гордеева</div>
+            <div class="team__item-text">3D дизайнер</div>
+          </div>
+          <div class="team__item">
+            <img src="./img/team-item5.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Светлана Коток</div>
+            <div class="team__item-text">Дизайнер интерьеров</div>
+          </div>
+          <div class="team__item">
+            <img src="./img/team-item6.webp" alt="" class="team__item-img" />
+            <div class="team__item-name">Максим Ковальский</div>
+            <div class="team__item-text">Дизайнер ландшафтов</div>
+          </div>
+        </div>
+        <div class="team__quote">
+          <div class="team__quote-title">Ты - то, что ты делаешь!</div>
+          <div class="team__quote-text">
+            То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют
+            старание и чувствуют неаккуратность. Это связано с уважением друг к
+            другу, так что небрежность - это неуважение к самому себе.
+          </div>
+          <div class="team__quote-subtitle">
+            <span>Ислам Куаныш</span><br />
+            Директор
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+      <div class="container">
+        <div class="def__title">Блог</div>
+        <div class="blog__items">
+          <div class="blog__item">
+            <img src="./img/blog-item1.webp" alt="" class="blog__item-img" />
+            <a href="" src="#" class="blog__item-title"
+              >Минимализм – это самый простой, практичный и «спорный» стиль в
+              дизайне интерьеров</a
+            >
+          </div>
+          <div class="blog__item">
+            <img src="./img/blog-item2.webp" alt="" class="blog__item-img" />
+            <a href="" src="#" class="blog__item-title"
+              >Прованс - это спокойный южный регион Франции, с великолепнейшей
+              природой</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="def__title def__title--invert">Остались вопросы?</div>
+        <div class="contacts__headline">
+          Задайте их в форме ниже и наши специалисты свяжуться с Вами!
+        </div>
+        <div class="contacts__items">
+          <div class="contacts__form">
+            <div class="contacts__form-inputs">
+              <input type="text" placeholder="Ваше имя" />
+              <input type="email" placeholder="Ваш e-mail" />
+              <input type="tel" placeholder="Ваш номер телефона" />
             </div>
+            <textarea
+              class="contacts__form-area"
+              placeholder="Ваше сообщение"
+            ></textarea>
+            <div class="def__btn">Оставить заявку!</div>
+          </div>
 
-            <div class="price__results-item">
-              <div class="price__results-text">
-                Средняя стоимость м<sup>2</sup>:
-              </div>
-              <div class="price__results-value">
-                <span class="price__meters-cost">250</span> руб.
-              </div>
+          <div class="contacts__list">
+            <div class="contacts__list-inner">
+              <a
+                href="tel:88968766677"
+                class="contacts__list-item contacts__list-item--phone"
+                >+ 7 896 876 66 77</a
+              >
+              <a class="contacts__list-item contacts__list-item--whatsapp"
+                >+ 7 896 876 66 77</a
+              >
+              <a
+                href="mailto:sales@23degree.kz"
+                class="contacts__list-item contacts__list-item--mail"
+                >sales@23degree.kz</a
+              >
+              <a class="contacts__list-item contacts__list-item--skype"
+                >skype: 23degree</a
+              >
+              <a class="contacts__list-item contacts__list-item--telegram"
+                >telegram: 23degree</a
+              >
             </div>
-
-            <div class="price__results-item">
-              <div class="price__results-text">
-                Средняя стоимость объекта:
-              </div>
-              <div class="price__results-value">
-                <span class="price__object-cost">250 000</span> руб.
-              </div>
+            <div class="contacts__text">
+              График работы: с 9-00 до 18-00. Пн.-Пт.
             </div>
-
-          </div>
-          <div class="def__btn">
-            Получить консультацию специалиста
-          </div>
-          <div class="price__results-phone-text">
-            или позвоните нам по телефону:
-          </div>
-          <a href="tel:77273887177" class="price__phone">
-            + 7 727 388 71 77
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio" id="portfolio">
-    <div class="container">
-      <div class="def__title">
-        Портфолио
-      </div>
-      <div class="portfolio__categories-wrapper">
-        <div class="portfolio__categories">
-          <button class="portfolio__category"><span>все проекты</span></button>
-          <button class="portfolio__category" category="ext"><span>экстерьеры</span></button>
-          <button class="portfolio__category" category="res"><span>жилые интерьеры</span></button>
-          <button class="portfolio__category" category="pub"><span>общественные интерьеры</span></button>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio__items-wrapper">
-      <div class="portfolio__items">
-        <img class="portfolio__item" category="ext" src="./img/portfolio-item1.webp" alt="house">
-        <img class="portfolio__item" category="res" src="./img/portfolio-item2.webp" alt="house">
-        <img class="portfolio__item" category="ext" src="./img/portfolio-item3.webp" alt="house">
-        <img class="portfolio__item" category="res" src="./img/portfolio-item4.webp" alt="house">
-        <img class="portfolio__item" category="pub" src="./img/portfolio-item5.webp" alt="house">
-        <img class="portfolio__item" category="pub" src="./img/portfolio-item6.webp" alt="house">
-      </div>
-    </div>
-  </section>
-
-  <section class="advantages" id="advantages">
-    <div class="container">
-      <div class="def__title">
-        Почему мы лучшие?
-      </div>
-      <div class="advantages__items">
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item1.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Профессиональные дизайнеры и визуализаторы с зарубежной практикой работы
-          </div>
-        </div>
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item2.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Интеративный подход, работаем до полного согласования с Вами
-          </div>
-        </div>
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item3.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Решаем вопрос закупки, берем авторский надзор на себя (пакет Full)
-          </div>
-        </div>
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item4.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Над проектом работает группа специалистов под началом project менеджера в ERP системе
-          </div>
-        </div>
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item5.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Выполнение раньше установленных сроков
-          </div>
-        </div>
-
-        <div class="advantages__item">
-          <img src="./img/adventages-item6.webp" class="advantages__item-img">
-          <div class="advantages__item-text">
-            Дарим альбом проекта, вместе с 25% скидкой на следующее обращение
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="process">
-    <div class="container">
-      <div class="def__title">
-        Процесс взаимодействия
-      </div>
-      <div class="progress__items">
-
-        <div class="process__item">
-          <img class="process__item-img" src="./img/process-item1.webp" alt="">
-          <div class="process__item-title">Заполнение брифа</div>
-        </div>
-
-        <div class="process__item">
-          <img class="process__item-img" src="./img/process-item2.webp" alt="">
-          <div class="process__item-title">Исследование</div>
-        </div>
-
-        <div class="process__item">
-          <img class="process__item-img" src="./img/process-item3.webp" alt="">
-          <div class="process__item-title">Идея</div>
-        </div>
-
-        <div class="process__item">
-          <img class="process__item-img" src="./img/process-item4.webp" alt="">
-          <div class="process__item-title">Завершение</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="slider">
-    <div class="container">
-      <div class="def__title">Нам доверяют более 50 компаний</div>
-      <div class="slider__items">
-
-        <div class="slider__item">
-          <img src="./img/slider-item1.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item2.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item3.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item3.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item1.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item2.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item3.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item1.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item2.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item2.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item3.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item1.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item5.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item4.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item2.webp" alt="">
-        </div>
-        <div class="slider__item">
-          <img src="./img/slider-item6.webp" alt="">
-        </div>
-
-      </div>
-      <input class="slider__range" type="range" min="1">
-    </div>
-  </section>
-
-  <section class="team" id="team">
-    <div class="container">
-      <div class="def__title">Наша команда</div>
-      <div class="team__items">
-        <div class="team__item">
-          <img src="./img/team-item1.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Ирина Притыкина</div>
-          <div class="team__item-text">Директор компании</div>
-        </div>
-        <div class="team__item">
-          <img src="./img/team-item2.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Игорь Карий</div>
-          <div class="team__item-text">Финансовый директор</div>
-        </div>
-        <div class="team__item">
-          <img src="./img/team-item3.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Илья Кондрашин</div>
-          <div class="team__item-text">Инженер модельер</div>
-        </div>
-        <div class="team__item">
-          <img src="./img/team-item4.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Маргарита Гордеева</div>
-          <div class="team__item-text">3D дизайнер</div>
-        </div>
-        <div class="team__item">
-          <img src="./img/team-item5.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Светлана Коток</div>
-          <div class="team__item-text">Дизайнер интерьеров</div>
-        </div>
-        <div class="team__item">
-          <img src="./img/team-item6.webp" alt="" class="team__item-img">
-          <div class="team__item-name">Максим Ковальский</div>
-          <div class="team__item-text">Дизайнер ландшафтов</div>
-        </div>
-      </div>
-      <div class="team__quote">
-        <div class="team__quote-title">Ты - то, что ты делаешь!</div>
-        <div class="team__quote-text">То, что мы делаем, определяет то, кем мы являемся. Люди чувствуют старание и чувствуют неаккуратность. Это связано с уважением друг к другу, так что небрежность - это неуважение к самому себе.</div>
-        <div class="team__quote-subtitle">
-          <span>Ислам Куаныш</span><br>
-          Директор
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="blog" id="blog">
-    <div class="container">
-      <div class="def__title">Блог</div>
-      <div class="blog__items">
-
-        <div class="blog__item">
-          <img src="./img/blog-item1.webp" alt="" class="blog__item-img">
-          <a href="" src="#" class="blog__item-title">Минимализм – это самый простой, практичный и «спорный» стиль в дизайне интерьеров</a>
-        </div>
-        <div class="blog__item">
-          <img src="./img/blog-item2.webp" alt="" class="blog__item-img">
-          <a href="" src="#" class="blog__item-title">Прованс - это спокойный южный регион Франции, с великолепнейшей природой</a>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="contacts" id="contacts">
-    <div class="container">
-      <div class="def__title def__title--invert">
-        Остались вопросы?
-      </div>
-      <div class="contacts__headline">
-        Задайте их в форме ниже и наши специалисты свяжуться с Вами!
-      </div>
-      <div class="contacts__items">
-
-        <div class="contacts__form">
-          <div class="contacts__form-inputs">
-            <input type="text" placeholder="Ваше имя">
-            <input type="email" placeholder="Ваш e-mail">
-            <input type="tel" placeholder="Ваш номер телефона">
-          </div>
-          <textarea class="contacts__form-area" placeholder="Ваше сообщение"></textarea>
-          <div class="def__btn">
-            Оставить заявку!
-          </div>
-        </div>
-
-        <div class="contacts__list">
-          <div class="contacts__list-inner">
-            <a href="tel:88968766677" class="contacts__list-item contacts__list-item--phone">+ 7 896 876 66 77</a>
-            <a class="contacts__list-item contacts__list-item--whatsapp">+ 7 896 876 66 77</a>
-            <a href="mailto:sales@23degree.kz" class="contacts__list-item contacts__list-item--mail">sales@23degree.kz</a>
-            <a class="contacts__list-item contacts__list-item--skype">skype: 23degree</a>
-            <a class="contacts__list-item contacts__list-item--telegram">telegram: 23degree</a>
-          </div>
-          <div class="contacts__text">
-            График работы: с 9-00 до 18-00. Пн.-Пт.
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="map">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255812.16129627865!2d29.809837090041547!3d59.93989912848277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1571065686873!5m2!1sru!2sru"
-      frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__content">
-        <nav class="footer__nav">
-          <a href="#" class="footer__nav-item">Главная</a>
-          <a href="#" class="footer__nav-item">Вопросы-ответы</a>
-          <a href="#" class="footer__nav-item">Новости</a>
-          <a href="#" class="footer__nav-item">Тарифы</a>
-          <a href="#" class="footer__nav-item">Личный кабинет</a>
-          <a href="#" class="footer__nav-item">Договор публичной оферты</a>
-        </nav>
-        <div class="footer__contacts">
-          <div class="footer__contacts-text">Мы в социальных сетях:</div>
-          <div class="footer__contacts-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <div class="footer__bottom">
-        <div class="footer__copyright">
-          © 23degrees, 2018. Все права защищены
+    </section>
+
+    <section class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255812.16129627865!2d29.809837090041547!3d59.93989912848277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696378cc74a65ed%3A0x6dc7673fab848eff!2z0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1571065686873!5m2!1sru!2sru"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <a href="#" class="footer__nav-item">Главная</a>
+            <a href="#" class="footer__nav-item">Вопросы-ответы</a>
+            <a href="#" class="footer__nav-item">Новости</a>
+            <a href="#" class="footer__nav-item">Тарифы</a>
+            <a href="#" class="footer__nav-item">Личный кабинет</a>
+            <a href="#" class="footer__nav-item">Договор публичной оферты</a>
+          </nav>
+          <div class="footer__contacts">
+            <div class="footer__contacts-text">Мы в социальных сетях:</div>
+            <div class="footer__contacts-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="footer__logo">
-          <img src="img/logo.webp" alt="23degree">
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            © 23degrees, 2018. Все права защищены
+          </div>
+          <div class="footer__logo">
+            <img src="img/logo.webp" alt="23degree" />
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/index.min.js"></script>
-</body>
-
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <script async src="js/index.min.js"></script>
+  </body>
 </html>
