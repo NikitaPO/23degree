@@ -122,8 +122,8 @@ input {
   bottom: 20px;
   right: 20px;
   font-size: 40px;
-  transition: .3s;
-  color: rgba($light-blue, .3);
+  transition: 0.3s;
+  color: rgba($light-blue, 0.3);
 }
 
 .scrollToTop:hover {
@@ -144,7 +144,7 @@ input {
 }
 
 .header__bg {
-  background: url("../img/header-bg.jpg") no-repeat center / cover;
+  background: url("../img/header-bg.webp") no-repeat center / cover;
 }
 
 .header__top {
@@ -168,13 +168,13 @@ input {
 }
 
 .header__contacts::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   height: 42px;
   width: 28px;
-  background-image: url("../img/phone.png");
+  background-image: url("../img/phone.webp");
 }
 
 .header__contacts-text {
@@ -194,7 +194,7 @@ input {
 
   .header__menu-burger {
     font-size: 25px;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   .header__menu-burger:hover {
@@ -210,7 +210,7 @@ input {
   width: 100vw;
   top: 0;
   left: 0;
-  background-color: rgba(#000, .2);
+  background-color: rgba(#000, 0.2);
 }
 
 .header__nav {
@@ -226,16 +226,16 @@ input {
 
   li {
     cursor: pointer;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     background-color: rgba(#000, 0);
   }
 
   li:hover {
-    background-color: rgba(#000, .1);
+    background-color: rgba(#000, 0.1);
   }
 
   li + li {
-    border-top: 1px solid rgba(#000, .2);
+    border-top: 1px solid rgba(#000, 0.2);
   }
 
   a {
@@ -274,7 +274,7 @@ input {
   font: 22px / 28px $rl;
   margin-bottom: 70px;
 }
-$border__offer: 1px solid rgba(#fff, .3);
+$border__offer: 1px solid rgba(#fff, 0.3);
 
 .header__form {
   border: 1px solid transparent;
@@ -321,7 +321,7 @@ $border__offer: 1px solid rgba(#fff, .3);
   width: 100%;
 
   &::before {
-    content: '';
+    content: "";
     left: 0;
     top: -1px;
     position: absolute;
@@ -330,7 +330,7 @@ $border__offer: 1px solid rgba(#fff, .3);
   }
 
   &::after {
-    content: '';
+    content: "";
     right: 0;
     top: -1px;
     position: absolute;
@@ -443,7 +443,7 @@ input.def__btn,
 
 .price {
   z-index: -10;
-  background: url("../img/price-bg.jpg") no-repeat center / cover;
+  background: url("../img/price-bg.webp") no-repeat center / cover;
   color: #fff;
   padding-bottom: 55px;
 }
@@ -494,7 +494,7 @@ input.def__btn,
 }
 
 .price__box-runner::before {
-  content: '';
+  content: "";
   position: absolute;
   border-bottom: 9px solid #fff;
   top: 32px;
@@ -515,7 +515,7 @@ input.def__btn,
   text-align: left;
 }
 
-.price__box-btns-text:nth-last-child(-n+2) {
+.price__box-btns-text:nth-last-child(-n + 2) {
   text-align: right;
 }
 
@@ -696,7 +696,7 @@ input.def__btn,
 }
 
 .advantages__item-text::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -24px;
   left: 50%;
@@ -784,7 +784,7 @@ input.def__btn,
   -webkit-appearance: none;
   width: 32px;
   height: 11px;
-  background-image: url("../img/range.png");
+  background-image: url("../img/range.webp");
 }
 
 //team
@@ -828,9 +828,9 @@ input.def__btn,
 
 .team__quote::after,
 .team__quote::before {
-  content: '';
+  content: "";
   position: absolute;
-  background-image: url("../img/quotes.png");
+  background-image: url("../img/quotes.webp");
   height: 37px;
   width: 47px;
 }
@@ -895,7 +895,7 @@ input.def__btn,
 //contacts
 
 .contacts {
-  background: url(../img/form-bg.jpg) no-repeat center / cover;
+  background: url(../img/form-bg.webp) no-repeat center / cover;
   padding-bottom: 68px;
   color: #fff;
 }
@@ -965,7 +965,7 @@ input.def__btn,
 }
 
 .contacts__list-item::before {
-  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
   height: 27px;
   width: 27px;
@@ -975,7 +975,7 @@ input.def__btn,
   border-radius: 3px;
   border: 1px solid #fff;
   background-color: rgba(#fff, 0);
-  transition: .5s;
+  transition: 0.5s;
   left: 0;
   top: 0;
   position: absolute;
@@ -983,28 +983,28 @@ input.def__btn,
 
 .contacts__list-item:hover {
   &::before {
-    background-color: rgba(#fff, .5);
+    background-color: rgba(#fff, 0.5);
   }
 }
 
 .contacts__list-item--phone::before {
-  content: '\f879';
+  content: "\f879";
 }
 
 .contacts__list-item--whatsapp::before {
-  content: '\f232';
+  content: "\f232";
 }
 
 .contacts__list-item--mail::before {
-  content: '\f0e0';
+  content: "\f0e0";
 }
 
 .contacts__list-item--skype::before {
-  content: '\f17e';
+  content: "\f17e";
 }
 
 .contacts__list-item--telegram::before {
-  content: '\f1d8';
+  content: "\f1d8";
 }
 
 .contacts__list a + a {
@@ -1051,7 +1051,7 @@ input.def__btn,
   display: inline-block;
   width: calc(100% / 3);
   margin-bottom: 8px;
-  transition: color .3s;
+  transition: color 0.3s;
 }
 
 .footer__nav-item:hover {
@@ -1078,7 +1078,7 @@ input.def__btn,
   }
 
   a {
-    transition: background-color .3s;
+    transition: background-color 0.3s;
   }
 
   a:hover {
