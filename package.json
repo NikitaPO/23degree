@@ -5,6 +5,7 @@
   "scripts": {
     "watch": "gulp",
     "build": "gulp build",
+    "public": "gulp gitPublic",
     "build:full": "gulp buildWithImages"
   },
   "keywords": [],
