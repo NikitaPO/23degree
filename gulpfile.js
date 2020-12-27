@@ -112,7 +112,16 @@ exports.cleanDocs = cleanDocs;
 exports.cleanDistWithoutImg = cleanDistWithoutImg;
 exports.copyToDocs = copyToDocs;
 
-exports.build = series(cleanDistWithoutImg, build);
-exports.buildWithImages = series(cleanDist, images, build);
-exports.gitPublic = series(cleanDocs, copyToDocs);
+const fullBuild = series(styles, scripts, build);
+
+exports.build = series(cleanDistWithoutImg, fullBuild);
+exports.buildWithImages = series(cleanDist, images, fullBuild);
+exports.publicWithImages = series(
+  cleanDist,
+  images,
+  fullBuild,
+  cleanDocs,
+  copyToDocs
+);
+exports.public = series(cleanDistWithoutImg, fullBuild, cleanDocs, copyToDocs);
 exports.default = parallel(styles, scripts, browsersync, watching);
